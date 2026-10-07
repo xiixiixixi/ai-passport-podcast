@@ -20,7 +20,7 @@ This record applies to the rebuilt public firmware with neutral artwork. Automat
 | First installation, phone setup and Recovery entry | NOT ACCEPTED | Physical testing on an explicitly compatible layout is still required for provisioning, pairing, button-to-Recovery behavior and data-preservation boundaries |
 | New public firmware sound, controls and continuous listening | NOT ACCEPTED | Ear-checked listening and physical interaction remain required. Previous firmware playback logs do not establish this result |
 
-Full-image SHA-256: `8ef5e4cda2b57d174cc67d2c7ca8aae5000cd4a98b7a37a851fd6b18202ef10f`. The installation bundle's own `release/manifest.json` binds the application, layout and full image; verify the corresponding downloaded files.
+Full-image SHA-256: `91a200d62a870ab42cc5e36fc859636c22a017a10bd51933f68892429a8420d6`. The installation bundle's own `release/manifest.json` binds the application, layout and full image; verify the corresponding downloaded files.
 
 The backend suite ran in isolated directories with the existing local ffmpeg 9.0.1. Audio checks measure actual duration, loudness, consistency between quiet and loud source recordings, and clipping headroom. No failures remain, and catalog or assertion problems were not attributed to unproven environment differences. Other systems and converter versions require their own verification. Public source includes eleven initial shows; each household manages subsequent subscriptions. An existing household's subscription or cache counts are not fresh-install defaults.
 

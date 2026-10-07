@@ -101,6 +101,40 @@ REQUIRED_SOURCE = {
 }
 
 
+# Actual linked dependency notices accompany public artifacts.
+REQUIRED_SOURCE.update({
+    'docs/licenses/README.md',
+    'docs/licenses/README.zh_CN.md',
+    'docs/licenses/cjson/LICENSE',
+    'docs/licenses/esp-idf/I2S-SOURCE-NOTICE.txt',
+    'docs/licenses/esp-idf/LICENSE',
+    'docs/licenses/esp-idf/esp_coex.LICENSE',
+    'docs/licenses/esp-idf/esp_phy.LICENSE',
+    'docs/licenses/esp-idf/esp_wifi.LICENSE',
+    'docs/licenses/espressif/button-4.2.0-SOURCE-NOTICE.txt',
+    'docs/licenses/espressif/esp_codec_dev-1.6.2-SOURCE-NOTICE.txt',
+    'docs/licenses/espressif/esp_codec_dev-1.6.2.LICENSE',
+    'docs/licenses/espressif/esp_lvgl_port-2.9.0-SOURCE-NOTICE.txt',
+    'docs/licenses/freertos/LICENSE.md',
+    'docs/licenses/freertos/SOURCE-NOTICE.txt',
+    'docs/licenses/gcc/COPYING.RUNTIME',
+    'docs/licenses/gcc/COPYING3',
+    'docs/licenses/gcc/SOURCE-NOTICE.txt',
+    'docs/licenses/http_parser/LICENSE.txt',
+    'docs/licenses/lvgl-fonts/FontAwesome5-LICENSE.txt',
+    'docs/licenses/lvgl-fonts/Montserrat-OFL.txt',
+    'docs/licenses/lvgl/LICENCE.txt',
+    'docs/licenses/lvgl/LICENSE_SPRINTF.txt',
+    'docs/licenses/lvgl/LICENSE_TLSF.txt',
+    'docs/licenses/lvgl/TLSF-SOURCE-NOTICE.txt',
+    'docs/licenses/lwip/COPYING',
+    'docs/licenses/mbedtls/LICENSE',
+    'docs/licenses/mbedtls/SOURCE-NOTICE.txt',
+    'docs/licenses/newlib/COPYING.NEWLIB',
+    'docs/licenses/wpa_supplicant/COPYING',
+    'docs/licenses/wpa_supplicant/README',
+})
+
 class ExportError(Exception):
     pass
 

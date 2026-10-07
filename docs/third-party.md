@@ -4,6 +4,8 @@
 
 Application code is distributed under the root MIT license. Original board/template code retains FoloToy's copyright notice in `firmware/LICENSE`. Managed ESP-IDF dependencies retain their own licenses and are downloaded from the pinned `dependencies.lock` rather than republished as generated dependencies.
 
+Actual firmware SDK, UI, audio-driver, networking and runtime library texts/notices are retained with the bundle in the [firmware dependency license index](licenses/README.md). It also retains built-in Latin fonts/icon glyphs and the GCC Runtime Library Exception. The root MIT license does not replace those dependency terms.
+
 The bundled Noto Sans SC source uses SIL Open Font License 1.1; its retained license is `firmware/assets/fonts/LICENSE-NotoSansSC.txt`. Custom bitmap compression does not change the font license. Tabler interface icons use the retained MIT notice under `server/static/assets/icons/LICENSE`. The embedded minimp3 decoder carries its original public-domain/CC0 notice in its header.
 
 The neutral bundled covers and presentation packaging are original project graphics distributed under MIT. The browser fallback uses the headphones icon with the retained icon license above. Personal podcast artwork, brand backgrounds without confirmed licenses and reference enclosure imagery are excluded from public source and installation bundles.

@@ -55,7 +55,9 @@ static void sha256(const uint8_t *data,size_t n,uint8_t out[32])
 }
 bool podcast_cover_id_valid(const char *id)
 {
-    if(!id)return false;size_t n=strlen(id);if(!n||n>=24)return false;
+    if (!id) return false;
+    size_t n = strlen(id);
+    if (!n || n >= 24) return false;
     for(size_t i=0;i<n;i++)if(!((id[i]>='a'&&id[i]<='z')||(id[i]>='A'&&id[i]<='Z')||
         (id[i]>='0'&&id[i]<='9')||id[i]=='-'||id[i]=='_'))return false;
     return true;

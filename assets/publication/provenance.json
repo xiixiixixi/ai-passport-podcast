@@ -19,7 +19,7 @@
     },
     {
       "path": "firmware/main/podcast_cover_wire.c",
-      "sha256": "4853c9e6d10e3a205678e1e5f18cdce3a15a9f8fb099323769eabafa4a06ba8e"
+      "sha256": "081094eba3bdca6d88eb6e7c0142fb73202fd3a4e741b4218d962e32d86bbcb7"
     },
     {
       "path": "firmware/main/app_cjk_18.c",

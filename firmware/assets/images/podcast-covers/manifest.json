@@ -1,0 +1,232 @@
+{
+  "artwork_policy": "original-neutral",
+  "artworks": [],
+  "neutral_tiles": [
+    {
+      "id": "gushifen",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "374b385cd36d78fe555211b9b1544cf947a2676fff5614c021cfb974598d2f28",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-gushifen-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "f3d9eb275cb2a31099ec3a813100d4c6c3d5adac09f426abefe875c9ce01ef70",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-gushifen-48.png"
+        }
+      }
+    },
+    {
+      "id": "huzuoyou",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "26ea550e2d8969eb8a30f355a7899a4bc69711e9f66ca9428a081c350246c9ea",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-huzuoyou-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "5972267fd6e5763f4289b8d9ecdfc83d26da5dc91a466c7800a210992dd9416b",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-huzuoyou-48.png"
+        }
+      }
+    },
+    {
+      "id": "buheshiyi",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "2c50e738c8f45b03aed53980f9e680d6462f6d482a13d9a34713b85b9cca24be",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-buheshiyi-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "64e6b5dd6d6fff533b5b1974bf772d75a5d99930192cae4985dbeb52af5f0e71",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-buheshiyi-48.png"
+        }
+      }
+    },
+    {
+      "id": "guixian101",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "785e65b4932bad3f704f405b559bf0347dcc3337380276734177e91ba10882ee",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-guixian101-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "9b32e2bbd0878f161c474ef2437b6730135228cf38d09d6c7bd67752b147717f",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-guixian101-48.png"
+        }
+      }
+    },
+    {
+      "id": "yeelok",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "643abd181818bcf3f7dc21f5862b9e989858a15d7183fa3549b603bd887e2148",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-yeelok-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "636f5aa28a809b3a3e3176b65ab97815cd052ed5e94de6ef3b3ddc90feb3b387",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-yeelok-48.png"
+        }
+      }
+    },
+    {
+      "id": "tianzhen",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "b90eb3bed6e3604c3a6dd9ac636c00f940ba64f33716369619682249d0f77c0d",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-tianzhen-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "d56adfc2cb4a5edb7dd957cf683af8004aedd1768244f4c3818befdb73019dd0",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-tianzhen-48.png"
+        }
+      }
+    },
+    {
+      "id": "lidan",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "374b385cd36d78fe555211b9b1544cf947a2676fff5614c021cfb974598d2f28",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-lidan-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "f3d9eb275cb2a31099ec3a813100d4c6c3d5adac09f426abefe875c9ce01ef70",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-lidan-48.png"
+        }
+      }
+    },
+    {
+      "id": "zhangxiaojun",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "26ea550e2d8969eb8a30f355a7899a4bc69711e9f66ca9428a081c350246c9ea",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-zhangxiaojun-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "5972267fd6e5763f4289b8d9ecdfc83d26da5dc91a466c7800a210992dd9416b",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-zhangxiaojun-48.png"
+        }
+      }
+    },
+    {
+      "id": "luoyonghao",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "2c50e738c8f45b03aed53980f9e680d6462f6d482a13d9a34713b85b9cca24be",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-luoyonghao-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "64e6b5dd6d6fff533b5b1974bf772d75a5d99930192cae4985dbeb52af5f0e71",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-luoyonghao-48.png"
+        }
+      }
+    },
+    {
+      "id": "wechat-talk",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "785e65b4932bad3f704f405b559bf0347dcc3337380276734177e91ba10882ee",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-wechat-talk-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "9b32e2bbd0878f161c474ef2437b6730135228cf38d09d6c7bd67752b147717f",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-wechat-talk-48.png"
+        }
+      }
+    },
+    {
+      "id": "thatisbiz",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "643abd181818bcf3f7dc21f5862b9e989858a15d7183fa3549b603bd887e2148",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-thatisbiz-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "636f5aa28a809b3a3e3176b65ab97815cd052ed5e94de6ef3b3ddc90feb3b387",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-thatisbiz-48.png"
+        }
+      }
+    },
+    {
+      "id": "src_5f90a6b1eacd7a9c",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "b90eb3bed6e3604c3a6dd9ac636c00f940ba64f33716369619682249d0f77c0d",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-src_5f90a6b1eacd7a9c-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "d56adfc2cb4a5edb7dd957cf683af8004aedd1768244f4c3818befdb73019dd0",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-src_5f90a6b1eacd7a9c-48.png"
+        }
+      }
+    },
+    {
+      "id": "default",
+      "source": "Original procedural sound-wave tile",
+      "license": "MIT; see repository LICENSE",
+      "prepared": {
+        "112": {
+          "rgb565_sha256": "374b385cd36d78fe555211b9b1544cf947a2676fff5614c021cfb974598d2f28",
+          "bytes": 25088,
+          "preview": "assets/publication/neutral-covers/neutral-default-112.png"
+        },
+        "48": {
+          "rgb565_sha256": "f3d9eb275cb2a31099ec3a813100d4c6c3d5adac09f426abefe875c9ce01ef70",
+          "bytes": 4608,
+          "preview": "assets/publication/neutral-covers/neutral-default-48.png"
+        }
+      }
+    }
+  ],
+  "sizes": [
+    112,
+    48
+  ],
+  "rgb565_total_bytes_including_neutral_fallback": 386048
+}

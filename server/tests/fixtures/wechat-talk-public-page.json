@@ -1,0 +1,680 @@
+{
+  "pid": "65f02690587b754dbe358a7d",
+  "title": "微信公开TALK",
+  "author": "加琳",
+  "description": "这是一档由微信公开课出品的播客节目，邀请各领域嘉宾分享在微信生态的最新观察，我们关注商业消费与生活方式，更关心如何与这个世界发生有趣的连接。",
+  "image": {
+    "picUrl": "https://image.xyzcdn.net/FoCpVT1AQS5YY-fQ9_lCPfKFT-FQ.jpg",
+    "width": 1500,
+    "height": 1500,
+    "format": "jpeg",
+    "thumbnailUrl": "https://image.xyzcdn.net/FoCpVT1AQS5YY-fQ9_lCPfKFT-FQ.jpg@thumbnail",
+    "smallPicUrl": "https://image.xyzcdn.net/FoCpVT1AQS5YY-fQ9_lCPfKFT-FQ.jpg@small",
+    "middlePicUrl": "https://image.xyzcdn.net/FoCpVT1AQS5YY-fQ9_lCPfKFT-FQ.jpg@middle",
+    "largePicUrl": "https://image.xyzcdn.net/FoCpVT1AQS5YY-fQ9_lCPfKFT-FQ.jpg@large"
+  },
+  "type": "PODCAST",
+  "episodeCount": 10,
+  "payType": "FREE",
+  "payEpisodeCount": 0,
+  "permissions": [
+    {
+      "name": "SHARE",
+      "status": "PERMITTED"
+    },
+    {
+      "name": "AI_SUMMARIZE_EPISODE",
+      "status": "DENIED"
+    }
+  ],
+  "status": "NORMAL",
+  "creator_names": [
+    "微信公开课"
+  ],
+  "episodes": [
+    {
+      "eid": "6a86ca6e1352af56ff39416f",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "你的微信号，值多少钱？",
+      "pubDate": "2026-08-20T09:39:29.524Z",
+      "duration": 3692,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FhkL-1fND3Bg2-L1NSxLHkb7d6xG.jpg",
+        "width": 1080,
+        "height": 1080,
+        "format": "jpeg",
+        "thumbnailUrl": "https://image.xyzcdn.net/FhkL-1fND3Bg2-L1NSxLHkb7d6xG.jpg@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FhkL-1fND3Bg2-L1NSxLHkb7d6xG.jpg@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FhkL-1fND3Bg2-L1NSxLHkb7d6xG.jpg@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FhkL-1fND3Bg2-L1NSxLHkb7d6xG.jpg@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lo8yT9Ryh3ed0ArsMEnD9m8Jwu1T.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/lo8yT9Ryh3ed0ArsMEnD9m8Jwu1T.m4a",
+        "size": 118845697,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lo8yT9Ryh3ed0ArsMEnD9m8Jwu1T.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6a4f196d2e335a35a8106c83",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "“别笑，你也过不了第二关”，官方回应来了",
+      "pubDate": "2026-07-09T03:49:18.228Z",
+      "duration": 3835,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fq6J6lTLirGEdW6QYK-50494rvHc.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fq6J6lTLirGEdW6QYK-50494rvHc.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fq6J6lTLirGEdW6QYK-50494rvHc.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fq6J6lTLirGEdW6QYK-50494rvHc.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fq6J6lTLirGEdW6QYK-50494rvHc.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/luVS5J27m1PKNTCoT4chr4BKu8IE.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/luVS5J27m1PKNTCoT4chr4BKu8IE.m4a",
+        "size": 123446372,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/luVS5J27m1PKNTCoT4chr4BKu8IE.m4a"
+        }
+      }
+    },
+    {
+      "eid": "698feb6366e2c30377687616",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "抢微信红包到底有没有攻略？",
+      "pubDate": "2026-02-14T03:32:41.813Z",
+      "duration": 3824,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fl4RUDKal6icqSl-fTYGRd6HW7me.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fl4RUDKal6icqSl-fTYGRd6HW7me.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fl4RUDKal6icqSl-fTYGRd6HW7me.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fl4RUDKal6icqSl-fTYGRd6HW7me.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fl4RUDKal6icqSl-fTYGRd6HW7me.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lskTnNerZOuLiNUZpcDyflfHdMUJ.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/lskTnNerZOuLiNUZpcDyflfHdMUJ.m4a",
+        "size": 123094600,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lskTnNerZOuLiNUZpcDyflfHdMUJ.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6951f4232db086f897811a59",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "关于微信占存储空间的8个误解",
+      "pubDate": "2025-12-29T03:38:40.577Z",
+      "duration": 5375,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fkv9rOYYXgsZTwqYxBvtzujtR1dR.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fkv9rOYYXgsZTwqYxBvtzujtR1dR.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fkv9rOYYXgsZTwqYxBvtzujtR1dR.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fkv9rOYYXgsZTwqYxBvtzujtR1dR.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fkv9rOYYXgsZTwqYxBvtzujtR1dR.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lgJr6n4KbUQmmcsmcQRRZiqU94j2.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/lgJr6n4KbUQmmcsmcQRRZiqU94j2.m4a",
+        "size": 173036502,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lgJr6n4KbUQmmcsmcQRRZiqU94j2.m4a"
+        }
+      }
+    },
+    {
+      "eid": "68ef43fb224325ea705917fb",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "真的没有人发朋友圈了吗？",
+      "pubDate": "2025-10-15T06:52:21.087Z",
+      "duration": 3514,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fq9HZ_A8OGllBXFz2y6NGBPFSnRz.png",
+        "width": 920,
+        "height": 920,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fq9HZ_A8OGllBXFz2y6NGBPFSnRz.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fq9HZ_A8OGllBXFz2y6NGBPFSnRz.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fq9HZ_A8OGllBXFz2y6NGBPFSnRz.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fq9HZ_A8OGllBXFz2y6NGBPFSnRz.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/liuLxyPS9ushDIFOX2fi2Ogcsqve.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/liuLxyPS9ushDIFOX2fi2Ogcsqve.m4a",
+        "size": 56839798,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/liuLxyPS9ushDIFOX2fi2Ogcsqve.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6894505146542d8c41f124f4",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "为什么微信没有已读功能？",
+      "pubDate": "2025-08-07T07:12:49.890Z",
+      "duration": 1851,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fhe2fxNzuZEruTUkm4ifEr8Uid5t.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fhe2fxNzuZEruTUkm4ifEr8Uid5t.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fhe2fxNzuZEruTUkm4ifEr8Uid5t.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fhe2fxNzuZEruTUkm4ifEr8Uid5t.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fhe2fxNzuZEruTUkm4ifEr8Uid5t.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lt7N8maFZsc-iJ1iwSjKCXZnj6Gn.m4a"
+      },
+      "media": {
+        "id": "65f02690587b754dbe358a7d/lt7N8maFZsc-iJ1iwSjKCXZnj6Gn.m4a",
+        "size": 59579670,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65f02690587b754dbe358a7d/lt7N8maFZsc-iJ1iwSjKCXZnj6Gn.m4a"
+        }
+      }
+    },
+    {
+      "eid": "667b6e94c37399840c2149f5",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "Vol.4 微信✖️三甲医院：解决长辈就医的“小”问题",
+      "pubDate": "2024-06-26T01:27:47.612Z",
+      "duration": 3073,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FgkR58kOxyDorrRvpfzQWtISKrPX.png",
+        "width": 1440,
+        "height": 1440,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FgkR58kOxyDorrRvpfzQWtISKrPX.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FgkR58kOxyDorrRvpfzQWtISKrPX.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FgkR58kOxyDorrRvpfzQWtISKrPX.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FgkR58kOxyDorrRvpfzQWtISKrPX.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/lgAsAWkgij8ch7oP4_xzh8CeKyQx.m4a"
+      },
+      "media": {
+        "id": "lgAsAWkgij8ch7oP4_xzh8CeKyQx.m4a",
+        "size": 49703294,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/lgAsAWkgij8ch7oP4_xzh8CeKyQx.m4a"
+        }
+      }
+    },
+    {
+      "eid": "662e628f5fb33c1b2b2b5035",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "Vol.3 创业十年的中埃家庭：出海和入华，都挺“香” ！",
+      "pubDate": "2024-04-29T01:00:00.000Z",
+      "duration": 3182,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fl9w9wBaxTdaBEsyjWnVXCWA-r-t.png",
+        "width": 1440,
+        "height": 1440,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fl9w9wBaxTdaBEsyjWnVXCWA-r-t.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fl9w9wBaxTdaBEsyjWnVXCWA-r-t.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fl9w9wBaxTdaBEsyjWnVXCWA-r-t.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fl9w9wBaxTdaBEsyjWnVXCWA-r-t.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/llO9j2N7CEz3rBBkPXJB974ZXfJY.m4a"
+      },
+      "media": {
+        "id": "llO9j2N7CEz3rBBkPXJB974ZXfJY.m4a",
+        "size": 51466820,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/llO9j2N7CEz3rBBkPXJB974ZXfJY.m4a"
+        }
+      }
+    },
+    {
+      "eid": "662673fcc3e09d8f37bf0bbc",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "Vol.2 4·23读书日：其实，不想看书也没关系",
+      "pubDate": "2024-04-22T23:00:00.000Z",
+      "duration": 4582,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZnLW5XVmNvamU2elU4RmpZQTdGX0xWbkF1MWEucG5n.png",
+        "thumbnailUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZnLW5XVmNvamU2elU4RmpZQTdGX0xWbkF1MWEucG5n.png@thumbnail",
+        "smallPicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZnLW5XVmNvamU2elU4RmpZQTdGX0xWbkF1MWEucG5n.png@small",
+        "middlePicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZnLW5XVmNvamU2elU4RmpZQTdGX0xWbkF1MWEucG5n.png@middle",
+        "largePicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZnLW5XVmNvamU2elU4RmpZQTdGX0xWbkF1MWEucG5n.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/lvfSWeMmFwK4teOt_wpiOYklzv29.m4a"
+      },
+      "media": {
+        "id": "lvfSWeMmFwK4teOt_wpiOYklzv29.m4a",
+        "size": 74105955,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/lvfSWeMmFwK4teOt_wpiOYklzv29.m4a"
+        }
+      }
+    },
+    {
+      "eid": "65f11d7b6c4561bc210d04e2",
+      "pid": "65f02690587b754dbe358a7d",
+      "title": "Vol.1 香港人亲述：去深圳，我不只是为了逛山姆",
+      "pubDate": "2024-03-13T03:28:58.275Z",
+      "duration": 2580,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZuMzlmM214bnYxRnhGNndVdnJpdDZxaUN4TVIucG5n.png",
+        "thumbnailUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZuMzlmM214bnYxRnhGNndVdnJpdDZxaUN4TVIucG5n.png@thumbnail",
+        "smallPicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZuMzlmM214bnYxRnhGNndVdnJpdDZxaUN4TVIucG5n.png@small",
+        "middlePicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZuMzlmM214bnYxRnhGNndVdnJpdDZxaUN4TVIucG5n.png@middle",
+        "largePicUrl": "https://bts-image.xyzcdn.net/aHR0cHM6Ly9pbWFnZS54eXpjZG4ubmV0L0ZuMzlmM214bnYxRnhGNndVdnJpdDZxaUN4TVIucG5n.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/lu2mE2F1OfraNYjea1l0_GdEgngY.m4a"
+      },
+      "media": {
+        "id": "lu2mE2F1OfraNYjea1l0_GdEgngY.m4a",
+        "size": 31407154,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/lu2mE2F1OfraNYjea1l0_GdEgngY.m4a"
+        }
+      }
+    }
+  ]
+}

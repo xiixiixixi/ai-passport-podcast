@@ -1,0 +1,13 @@
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x6000,
+phy_init, data, phy,     0xf000,   0x1000,
+factory,  app,  factory, 0x10000,  0x650000,
+store,    data, nvs,     0x660000, 0x4000,
+# 0x664000-0x6bc000 (352KB) is unallocated: reserved for the raw artwork cache
+# (podcast_cover_dynamic.c COVER_FLASH_BASE..LIMIT = the 64KB-aligned interior
+# 0x670000-0x6b0000; esp_mmu_map requires whole 64KB flash pages). Must stay
+# outside every partition: IDF write-protects the whole running app partition,
+# so the old factory-tail location (0x610000+) could never be written without
+# abort().
+netcfg,   data, nvs,     0x6bc000, 0x4000,
+recovery, app,  test,    0x6c0000, 0x140000,

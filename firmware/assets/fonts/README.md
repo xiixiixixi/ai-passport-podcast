@@ -1,0 +1,20 @@
+<p align="right"><a href="README.zh_CN.md">简体中文</a> · <strong>English</strong></p>
+
+# Podcast font sources
+
+`NotoSansSC-Regular.otf` is the regular-weight Noto Sans SC source used for both application fonts. Its embedded copyright is © 2014–2021 Adobe; its embedded license declares SIL Open Font License 1.1. The upstream family is [Noto CJK](https://github.com/notofonts/noto-cjk), with [license terms](https://openfontlicense.org/open-font-license-official-text/). The exact local source SHA-256 is `faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9`; this identifies the retained source rather than claiming equivalence to the latest upstream file.
+
+Run `python3 tools/generate_podcast_fonts.py` with `lv_font_conv` 1.5.3. It validates the source hash and generates 4-bit grayscale fonts without kerning. The 18px bitmap then receives the project's lossless per-glyph byte-Huffman encoding; the 16px UI font remains uncompressed:
+
+- `main/app_cjk_18.c`: 18px, 23px line height; printable ASCII, Latin-1, basic CJK, extension A, selected Chinese punctuation, and the ten corpus-backed characters in `title-symbols.txt`. Dynamic names and episode titles use this font.
+- `main/app_ui_16.c`: 16px, 20px line height; ASCII and the fixed application vocabulary in `ui-symbols.txt`. Captions, dates, hints and fixed error messages use this font. The manifest excludes credential definitions.
+
+The source contains 20,976 basic CJK glyphs and 6,582 extension-A glyphs in the requested ranges. Missing extended characters, emoji and uncovered scripts remain visible placeholders. No arbitrary-Unicode claim is made. The unused historical full 16px generated asset is excluded from this product; the licensed source remains available for regeneration.
+
+The startup probe reads representative glyph descriptors and real bitmap bytes, checking the expected `6296d092` FNV checksum and a known absent emoji. A successful probe does not establish physical panel output. For actual widget/font coverage, software rendering, and the 24KiB LVGL pool budget, build `tools/podcast_preview`; run its executable in a writable output directory. Its sample episode titles are layout fixtures, not recordings of a device screen.
+
+The 2026-10-04 character-only regression fixture covers displayable prefixes from all 3,728 episodes across the eleven configured catalogues. The original four-show check identified seven source-backed omissions (`ǎι〇のん︱｜`); the eleven-show check additionally found U+2260 in one title, U+26A0 in one title, and U+FF5E in two titles. All three have glyphs in the retained source and are added without expanding entire Unicode blocks. The UI displays heavy multiplication `✖` as text `×`, omits the non-spacing emoji presentation selector, and explicitly shows an embedded-object marker as U+56FE inside square brackets. Original metadata and bookmarks are retained; other unsupported characters remain visible and logged. Run the preview with `tests/fixtures/podcast-title-characters.txt` as its argument to check actual widgets and A8 glyph decoding for all 2,813 observed characters. Runtime assertions remain enabled in release previews.
+
+Startup also decodes representative glyphs through the real bitmap callback and draws Chinese into a temporary RGB565 canvas, expecting A8 `6be31a46` and RGB565 `b704ea88`. The temporary memory is freed before the UI and network start. Visible-label checks record missing codepoints, invalid UTF-8, invisible text and incorrect font bindings without logging titles. These checks distinguish software stages and still do not establish physical LCD acceptance.
+
+The custom codec preserves every glyph descriptor, character map and all 16 grayscale levels. A full comparison verifies 27,782 descriptors and 8,409,616 decoded A8 pixels against the original converter output; 75 playback previews remain pixel-identical. This is separate from LVGL's standard three-bit compressed font feature. Reproduce with the locked converter via `python3 tools/generate_podcast_fonts.py --title-only`; `tests/test_podcast_font_lossless.c` accepts an original converter source for the exhaustive comparison.

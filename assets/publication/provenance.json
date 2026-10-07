@@ -1,0 +1,96 @@
+{
+  "capture_type": "production-ui-host-export",
+  "device_capture": false,
+  "fictional_sample_content": true,
+  "artwork_policy": "original-neutral",
+  "screen_dimensions": [
+    240,
+    320
+  ],
+  "render_library": "@resvg/resvg-js 2.6.2",
+  "sources": [
+    {
+      "path": "firmware/main/podcast_ui.c",
+      "sha256": "c879dbe30ddea34c7c8752f6167659b3036f3c4e308e2a375dfc5a7fd065f47a"
+    },
+    {
+      "path": "firmware/main/podcast_cover_dynamic.c",
+      "sha256": "48b841eed2b9b676432757a0e3e57e59d2e9b7f4ae400f400adade523da7807b"
+    },
+    {
+      "path": "firmware/main/podcast_cover_wire.c",
+      "sha256": "4853c9e6d10e3a205678e1e5f18cdce3a15a9f8fb099323769eabafa4a06ba8e"
+    },
+    {
+      "path": "firmware/main/app_cjk_18.c",
+      "sha256": "a3e4d8073b6d68c748d994e95aa51bff9b4c73bf49086d3cc3d5197d96b5ad03"
+    },
+    {
+      "path": "firmware/main/app_ui_16.c",
+      "sha256": "527f4f52c97344e5af6cee492406bdcb179163475ec8becae31c1e1886e7730b"
+    },
+    {
+      "path": "firmware/tools/podcast_preview/preview.c",
+      "sha256": "4ad14539bcb7d97a8c8dce6425eed981b3e5d997a9d9b6203694b63cf2c9b124"
+    },
+    {
+      "path": "firmware/tools/generate_podcast_covers.py",
+      "sha256": "a59b5eeee1633e664f83b0a60e2e2c6a0e5ecbc8d76f3a85cee0a6c5ccc17c11"
+    },
+    {
+      "path": "assets/publication/render.py",
+      "sha256": "a282200233b85bb3e06ca546d33103a429cfd2df565eff205ecb2f3eb9ef7622"
+    },
+    {
+      "path": "assets/publication/render.mjs",
+      "sha256": "33cc190a7c87cd67172b14236f4acbaa387a94c903bb317a794af1b337cc63c7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/publication/github-showcase.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 80672,
+      "sha256": "37ae5dd96885d0a1c1a050df3579d9b6633d4aee8bfc9187cba53f5950058574"
+    },
+    {
+      "path": "assets/publication/library-native.png",
+      "dimensions": [
+        240,
+        320
+      ],
+      "bytes": 7602,
+      "sha256": "dec99a08708e7845129d1bfbef32dd2ba7346f13492a02f91bb2e0fffccadc2c"
+    },
+    {
+      "path": "assets/publication/library-showcase-3x4.png",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "bytes": 90884,
+      "sha256": "5e3cfcae95b499a2a5160651f5128c34f8a94a5e4b1495eaddfeb7c62f4cd5a1"
+    },
+    {
+      "path": "assets/publication/play-cover-3x4.png",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "bytes": 93928,
+      "sha256": "e651cbb2946dde746e70fd641f0743993bd0526bb8a3f15b5eedb24cdfd9a207"
+    },
+    {
+      "path": "assets/publication/player-native.png",
+      "dimensions": [
+        240,
+        320
+      ],
+      "bytes": 7506,
+      "sha256": "a67903e35da8b728ca3b54b8e8b257c447ab9742d816f9b4eeee0244c3545c9e"
+    }
+  ]
+}

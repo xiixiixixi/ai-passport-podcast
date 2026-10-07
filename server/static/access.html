@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>连接你的随身听</title>
+  <script>try{const t=JSON.parse(localStorage.getItem('portable-podcast-theme'));if(['light','dark'].includes(t))document.documentElement.dataset.theme=t;}catch{}</script>
+  <link rel="stylesheet" href="/static/assets/player.css?v=20261005-public">
+  <link rel="stylesheet" href="/static/assets/access.css?v=20261005-public">
+</head>
+<body class="access-body">
+  <main class="access-layout">
+    <div class="access-intro">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><span class="icon icon-headphones"></span></span><span>随身听<small>播客播放器</small></span></a>
+      <p class="eyebrow">属于你家的播客电台</p>
+      <h1 id="access-heading">连接你的随身听</h1>
+      <p>一个节目库，一份收听进度。网页与家里的播客机，换个地方也能接着听。</p>
+      <ol class="access-steps" aria-label="安装顺序"><li><span>01</span>启动后台，设置管理口令</li><li><span>02</span>生成配对码，连接硬件</li><li><span>03</span>选一集，开始收听</li></ol>
+      <p class="access-boundary">后台运行在你自己的电脑或家庭服务器上，设备与它连接同一个局域网。一户可以连接多台播客机，共享这一户的记录。</p>
+    </div>
+    <section class="access-form-area" aria-labelledby="form-heading">
+      <h2 id="form-heading">正在连接后台…</h2>
+      <p id="access-description">请稍等。</p>
+      <form id="access-form" hidden>
+        <label id="setup-key-label" for="setup-key">安装码<input id="setup-key" type="password" autocomplete="off" maxlength="256" aria-describedby="setup-key-help"><span class="field-note" id="setup-key-help">请从安装脚本生成的本机首次设置入口打开，安装码会自动填入。</span></label>
+        <label for="admin-password">管理口令<span class="password-field"><input id="admin-password" type="password" autocomplete="new-password" minlength="10" maxlength="256" required><button type="button" class="quiet-button" id="show-password" aria-pressed="false" aria-controls="admin-password">显示</button></span><span class="field-note" id="password-help">至少 10 个字符，请妥善保存。硬件配对不需要输入这个口令。</span></label>
+        <button class="show-play" id="access-submit" type="submit">保存并进入</button>
+      </form>
+      <p id="access-feedback" class="access-feedback" role="status" aria-live="polite"></p>
+      <button class="quiet-button" id="access-retry" hidden>重新连接后台</button>
+      <p class="access-private">登录只管理你自己的后台。配对码与设备凭据不会上传到项目作者的服务器。</p>
+    </section>
+  </main>
+  <script src="/static/assets/access.js"></script>
+</body>
+</html>

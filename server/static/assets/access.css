@@ -1,0 +1,60 @@
+/* Keep the existing player palette and type. Setup is a short, quiet workflow. */
+* { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar { display: none; width: 0; height: 0; }
+.access-body { padding: 0; }
+.access-layout { max-width: 1000px; margin: 0 auto; padding: 72px 36px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 84px; align-items: start; }
+.access-intro .brand { margin-bottom: 64px; }
+.access-body .brand small, .access-body .eyebrow, .access-body .quiet-button, .devices-page .eyebrow, .devices-page .quiet-button { font-size: 12px; }
+.access-intro h1 { font-size: clamp(30px, 4vw, 44px); letter-spacing: -.04em; margin: 10px 0 18px; line-height: 1.25; }
+.access-intro > p:not(.eyebrow) { color: var(--muted); line-height: 1.8; max-width: 34em; }
+.access-steps { list-style: none; padding: 0; margin: 36px 0; display: grid; gap: 18px; }
+.access-steps li { display: flex; align-items: baseline; gap: 18px; }
+.access-steps span { color: var(--accent-text); font-variant-numeric: tabular-nums; font-size: 12px; }
+.access-boundary { font-size: 13px; padding-top: 22px; border-top: 1px solid var(--line); }
+.access-form-area { margin-top: 140px; }
+.access-form-area h2 { font-size: 22px; margin-bottom: 10px; }
+.access-form-area > p { color: var(--muted); }
+#access-form { display: grid; gap: 26px; margin-top: 30px; }
+#access-form label { display: grid; gap: 10px; font-weight: 600; }
+#access-form input { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+.password-field { display: flex; align-items: stretch; gap: 8px; }
+.password-field input { min-width: 0; }
+.password-field button { flex: none; min-width: 56px; }
+.field-note { color: var(--muted); font-size: 12px; font-weight: 400; line-height: 1.65; }
+#access-submit { min-height: 48px; justify-content: center; }
+.access-feedback { min-height: 1.6em; margin-top: 18px; color: var(--accent-text) !important; }
+.access-private { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 20px; font-size: 12px; line-height: 1.8; }
+.devices-page { max-width: 960px; }
+.devices-intro { max-width: 48em; color: var(--muted); }
+.pairing-area { padding: 28px 0; margin: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1.1fr 1fr; gap: 44px; }
+.pairing-area h2 { font-size: 20px; margin-bottom: 12px; }
+.pairing-area ol { margin: 18px 0 0; padding-left: 20px; color: var(--muted); display: grid; gap: 14px; }
+.pairing-controls { display: grid; gap: 14px; align-content: start; }
+.pairing-controls label { display: grid; gap: 7px; color: var(--muted); }
+.pairing-controls input { width: 100%; border: 1px solid var(--line); border-radius: 8px; min-height: 44px; padding: 10px 12px; background: var(--surface); color: var(--text); }
+.pair-code { display: block; font-size: 44px; font-weight: 650; font-variant-numeric: tabular-nums; letter-spacing: .16em; color: var(--text); margin: 4px 0 10px; }
+.pair-details { padding: 16px 0 0; border-top: 1px solid var(--line); }
+.pair-details p, .device-help { font-size: 13px; color: var(--muted); line-height: 1.75; }
+.pair-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.device-list { display: grid; }
+.device-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.device-row h3 { font-size: 16px; }
+.device-row p { color: var(--muted); font-size: 12px; margin-top: 5px; overflow-wrap: anywhere; }
+.device-row-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: end; }
+.device-row-actions button, .device-rename-form button { min-height: 44px; }
+.device-rename-form { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.device-rename-form input { min-height: 44px; max-width: 220px; border: 1px solid var(--line); background: var(--surface); color: var(--text); padding: 8px 10px; border-radius: 6px; }
+.device-status { color: var(--accent-text); }
+.device-session-bar { margin-top: 28px; display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.device-feedback { color: var(--accent-text); min-height: 1.6em; margin-top: 12px; }
+.icon-device { --icon: url('/static/assets/icons/device-desktop.svg'); }
+@media (max-width: 760px) {
+  .access-layout { display: block; padding: 30px 24px; }
+  .access-intro .brand { margin-bottom: 36px; }
+  .access-steps { margin: 26px 0; }
+  .access-form-area { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .pairing-area { grid-template-columns: 1fr; gap: 28px; }
+  .device-row { align-items: start; flex-direction: column; gap: 14px; }
+  .device-row-actions { justify-content: start; }
+  .device-session-bar { align-items: start; }
+}

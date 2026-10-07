@@ -1,0 +1,74 @@
+{
+  "refresh_minutes": 180,
+  "target_bitrate": "32k",
+  "segment_seconds": 300,
+  "prefetch_latest": 1,
+  "media_free_reserve_mb": 256,
+  "shows": [
+    {
+      "id": "gushifen",
+      "name": "故事FM",
+      "feed": "https://feeds.storyfm.cn/storyfm.xml"
+    },
+    {
+      "id": "huzuoyou",
+      "name": "忽左忽右",
+      "feed": "https://feed.xyzfm.space/cv4bkgpuglwp",
+      "identities": {
+        "xiaoyuzhou": [
+          "5e4ee557418a84a0466737b7"
+        ]
+      }
+    },
+    {
+      "id": "buheshiyi",
+      "name": "不合时宜",
+      "feed": "https://feed.xyzfm.space/ww7cqnybekty"
+    },
+    {
+      "id": "guixian101",
+      "name": "硅谷101",
+      "feed": "https://feeds.fireside.fm/sv101/rss"
+    },
+    {
+      "id": "yeelok",
+      "name": "怡楽播客",
+      "feed": "https://s2.proxy.wavpub.com/yeelokradio.xml"
+    },
+    {
+      "id": "tianzhen",
+      "name": "天真不天真",
+      "feed": "https://feed.xyzfm.space/mcklbwxjdvfu"
+    },
+    {
+      "id": "lidan",
+      "name": "李诞",
+      "feed": "/feeds/xiaoyuzhou/65bb55f6513a776b57dedb32.xml"
+    },
+    {
+      "id": "zhangxiaojun",
+      "name": "张小珺Jùn｜商业访谈录",
+      "feed": "https://feed.xyzfm.space/dk4yh3pkpjp3"
+    },
+    {
+      "id": "luoyonghao",
+      "name": "罗永浩的十字路口",
+      "feed": "https://feed.xyzfm.space/wmnkvmrpwuww"
+    },
+    {
+      "id": "wechat-talk",
+      "name": "微信公开TALK",
+      "feed": "/feeds/xiaoyuzhou/65f02690587b754dbe358a7d.xml"
+    },
+    {
+      "id": "thatisbiz",
+      "name": "商业就是这样",
+      "feed": "https://feeds.fireside.fm/thatisbiz/rss",
+      "identities": {
+        "apple": [
+          "1552904790"
+        ]
+      }
+    }
+  ]
+}

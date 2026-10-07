@@ -1,0 +1,73 @@
+# --- 目标芯片 ---
+CONFIG_IDF_TARGET="esp32c3"
+# 注:ESP32-C3 无 PSRAM,故不设 CONFIG_SPIRAM。
+
+# --- Flash ---
+# FoloToy AI Passport 当前产品/固件基线使用 8MB Flash。
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+# 固定 8MB 镜像头，关闭 detect，便于 idf.py merge-bin。
+CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE=n
+# 播客公共版使用协议4分区，保留永久 Recovery、netcfg 与共享 store。
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+# Boot-time Recovery uses our 200ms custom hook, not IDF's generic GPIO reset.
+# CONFIG_BOOTLOADER_FACTORY_RESET is not set
+# CONFIG_BOOTLOADER_APP_TEST is not set
+
+# --- 控制台:USB-Serial-JTAG(C3 原生 USB,GPIO18/19)---
+# 不用 UART0:其默认 TX=GPIO21 与本板背光引脚冲突。
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
+
+# --- LVGL ---
+CONFIG_LV_COLOR_DEPTH_16=y
+# 20 ms display refresh period targets up to 50 FPS when rendering and SPI
+# transfer complete within the same budget.
+CONFIG_LV_DEF_REFR_PERIOD=20
+CONFIG_LV_FONT_MONTSERRAT_14=y
+CONFIG_LV_FONT_MONTSERRAT_20=y
+# LVGL 内置 malloc 池大小(KB)。它是独立静态区、不与系统堆共享,配大了会白白占用 RAM。
+# 本 demo UI 简单,24KB 足够;若自建复杂界面出现绘制卡死/看门狗,调大此值。
+CONFIG_LV_MEM_SIZE_KILOBYTES=24
+CONFIG_LV_FONT_MONTSERRAT_32=y
+CONFIG_LV_FONT_MONTSERRAT_48=y
+
+# --- 系统 ---
+CONFIG_FREERTOS_HZ=1000
+# 播放器 PCM 队列用 xStreamBufferCreateStatic 固定在静态区(32KB)，
+# 起播不再向运行时堆要连续大块。静态创建接口需要本选项。
+CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION=y
+
+# --- Bluetooth LE / NimBLE ---
+# ESP32-C3 仅支持 BLE；示例只启用单连接 peripheral 所需的最小 host 配置。
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+CONFIG_BT_NIMBLE_ROLE_CENTRAL=n
+CONFIG_BT_NIMBLE_ROLE_PERIPHERAL=y
+CONFIG_BT_NIMBLE_ROLE_BROADCASTER=y
+CONFIG_BT_NIMBLE_ROLE_OBSERVER=n
+CONFIG_BT_NIMBLE_MAX_CONNECTIONS=1
+CONFIG_BT_NIMBLE_HOST_BASED_PRIVACY=n
+CONFIG_BT_NIMBLE_NVS_PERSIST=n
+
+# --- 中文字体(播客页要显示中文节目名和标题) ---
+# 默认只编了 Montserrat,没有任何中文字形,中文会显示成方框/乱码。
+# 缺字形时保留 placeholder,让它显示成方框,至少能看出"这个字没有"。
+# Dynamic titles use app_cjk_18; fixed captions use app_ui_16 (both 4bpp).
+# CONFIG_LV_FONT_SOURCE_HAN_SANS_SC_16_CJK is not set
+CONFIG_LV_TXT_ENC_UTF8=y
+CONFIG_LV_USE_FONT_PLACEHOLDER=y
+
+CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM=6
+
+CONFIG_LWIP_TCP_SND_BUF_DEFAULT=5760
+
+CONFIG_LWIP_TCP_WND_DEFAULT=5760
+
+# Full basic CJK text font exceeds the small glyph bitmap index.
+CONFIG_LV_FONT_FMT_TXT_LARGE=y
+
+# Verified TLS for configured HTTPS backends; never bypass certificate checks.
+CONFIG_MBEDTLS_CERTIFICATE_BUNDLE=y
+CONFIG_MBEDTLS_CERTIFICATE_BUNDLE_DEFAULT_FULL=y

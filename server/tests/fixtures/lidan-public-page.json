@@ -1,0 +1,812 @@
+{
+  "pid": "65bb55f6513a776b57dedb32",
+  "title": "李诞",
+  "author": "佚名",
+  "description": "李诞的播客\n\n播客让我有种使用古早互联网的感觉，真诚的分享，遥远的共鸣，匿名般的交流，人与人更显亲密，我好像也不是那么“李诞”了。\n\n我由于说话太多，对自己的话究竟有没有人想听早已失去了判断。\n\n袁袁是我非常信赖的朋友，我们好像都没一起吃过饭，只是聊过几次很长的天，请她来做这个播客的制作人再合适不过。\n\n在这里与你分享我的所见所闻，所思所想，所困所惑。现代生活就是一场茫茫黑夜漫游，因为种种误会我们总希望找到灯塔，总误以为看到了灯塔，然而其实看到的往往只是另一个人晃来晃去的手电。希望这个播客能成为一个照亮你某时某刻的手电，如果不能，那我们就共享黑暗，enjoy！\n\n商务合作：youla@easy-ent.com",
+  "image": {
+    "picUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png",
+    "width": 1440,
+    "height": 1440,
+    "format": "png",
+    "thumbnailUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@thumbnail",
+    "smallPicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@small",
+    "middlePicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@middle",
+    "largePicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@large"
+  },
+  "type": "PODCAST",
+  "episodeCount": 43,
+  "payType": "FREE",
+  "payEpisodeCount": 0,
+  "permissions": [
+    {
+      "name": "SHARE",
+      "status": "PERMITTED"
+    },
+    {
+      "name": "AI_SUMMARIZE_EPISODE",
+      "status": "DENIED"
+    }
+  ],
+  "status": "NORMAL",
+  "creator_names": [
+    "lidan李诞",
+    "lemon袁袁"
+  ],
+  "episodes": [
+    {
+      "eid": "6ab1db4593d5eb3bdc790012",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "41.与连三球闲聊：从没听过的身体观",
+      "pubDate": "2026-09-22T16:00:00.000Z",
+      "duration": 3741,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lr1PA1ezpvQpzrBvfVbo6dRh8H7b.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lr1PA1ezpvQpzrBvfVbo6dRh8H7b.m4a",
+        "size": 60562948,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lr1PA1ezpvQpzrBvfVbo6dRh8H7b.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6a966be2a0210c197dcb88ab",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "40.与邓师傅闲聊：做川菜五十年",
+      "pubDate": "2026-09-01T16:00:00.000Z",
+      "duration": 5053,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/liULaant-oiLKSAyj8GJ6V84BVt0.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/liULaant-oiLKSAyj8GJ6V84BVt0.m4a",
+        "size": 81807138,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/liULaant-oiLKSAyj8GJ6V84BVt0.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6a816ecf17676351c5729c18",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "39.和方三文闲聊：普通人投资在关心什么",
+      "pubDate": "2026-08-16T22:00:00.000Z",
+      "duration": 2886,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lspqNa0n_7Pkbn0ArYBFFrVbXf1g.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lspqNa0n_7Pkbn0ArYBFFrVbXf1g.m4a",
+        "size": 46682768,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lspqNa0n_7Pkbn0ArYBFFrVbXf1g.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6a31280d43a22a695584c7ac",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "38.与川糖周掌门闲聊：茅台！",
+      "pubDate": "2026-06-16T16:00:00.000Z",
+      "duration": 4785,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lkzIFIdgH2LANe5fgCr8Dq0e8jC-.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lkzIFIdgH2LANe5fgCr8Dq0e8jC-.m4a",
+        "size": 77461781,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lkzIFIdgH2LANe5fgCr8Dq0e8jC-.m4a"
+        }
+      }
+    },
+    {
+      "eid": "69eb22241d989496e768a393",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "37.和半拿铁闲聊：一不小心就开始回忆",
+      "pubDate": "2026-04-24T16:00:00.000Z",
+      "duration": 4691,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/luNH8CAHsj7pjBTWaIEUTOkWoS6a.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/luNH8CAHsj7pjBTWaIEUTOkWoS6a.m4a",
+        "size": 75949474,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/luNH8CAHsj7pjBTWaIEUTOkWoS6a.m4a"
+        }
+      }
+    },
+    {
+      "eid": "69afca292a2882aae747aadc",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "36.李诞×陈嘉映：“我擅长理解伟大心灵”",
+      "pubDate": "2026-03-10T16:00:00.000Z",
+      "duration": 4712,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lhgW6lKq1OGkws3yg0xWhLxjQ5bn.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lhgW6lKq1OGkws3yg0xWhLxjQ5bn.m4a",
+        "size": 76292803,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lhgW6lKq1OGkws3yg0xWhLxjQ5bn.m4a"
+        }
+      }
+    },
+    {
+      "eid": "697b4975b4be4c149b24a741",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "35.鉴定网络热门生物：无穷小亮！",
+      "pubDate": "2026-01-29T16:00:00.000Z",
+      "duration": 3969,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lsFcWzEkgwOvkrKiEqcPDmrrSo5H.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lsFcWzEkgwOvkrKiEqcPDmrrSo5H.m4a",
+        "size": 64256765,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lsFcWzEkgwOvkrKiEqcPDmrrSo5H.m4a"
+        }
+      }
+    },
+    {
+      "eid": "695fc43c8f388c61e1e30662",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "34.小浣熊水浒卡的作者们！",
+      "pubDate": "2026-01-08T16:00:26.495Z",
+      "duration": 4114,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lnyf_DT-PFWUMDYg6uFG5Fhbl8om.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lnyf_DT-PFWUMDYg6uFG5Fhbl8om.m4a",
+        "size": 66602944,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lnyf_DT-PFWUMDYg6uFG5Fhbl8om.m4a"
+        }
+      }
+    },
+    {
+      "eid": "694cf49c946dca092549666d",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "33.与刘擎在南极聊哲学",
+      "pubDate": "2025-12-25T16:00:00.000Z",
+      "duration": 5213,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/llI0L2r-0-OQisNNI1guEnFQBXmQ.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/llI0L2r-0-OQisNNI1guEnFQBXmQ.m4a",
+        "size": 84389894,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/llI0L2r-0-OQisNNI1guEnFQBXmQ.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6941631e4c65abaff3514b75",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "32.从一条到徐沪生，媒体二十年",
+      "pubDate": "2025-12-16T16:00:26.629Z",
+      "duration": 4756,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/ljho0OelaZPG4KBNA71WTP_IJCuE.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/ljho0OelaZPG4KBNA71WTP_IJCuE.m4a",
+        "size": 76997208,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/ljho0OelaZPG4KBNA71WTP_IJCuE.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6925da73f8a9e1d162697648",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "31.画家张涉嫌：与流浪汉和马列维奇一起生活",
+      "pubDate": "2025-11-25T17:25:46.438Z",
+      "duration": 4423,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lvtzsEoSE9KkCNTDav_SguxZEIIS.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lvtzsEoSE9KkCNTDav_SguxZEIIS.m4a",
+        "size": 106993381,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lvtzsEoSE9KkCNTDav_SguxZEIIS.m4a"
+        }
+      }
+    },
+    {
+      "eid": "6915c7746018cc2c98af8abe",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "30.与张树鹏闲聊：人在天上飞是怎样的体验？",
+      "pubDate": "2025-11-13T16:00:00.000Z",
+      "duration": 2839,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/FklNm1JUizZbEO2Nva-Annlcr2-o.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lsmEBm8h-RI59kch4oVElbuQPmXz.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lsmEBm8h-RI59kch4oVElbuQPmXz.m4a",
+        "size": 68692849,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lsmEBm8h-RI59kch4oVElbuQPmXz.m4a"
+        }
+      }
+    },
+    {
+      "eid": "69009550740634ca4769666c",
+      "pid": "65bb55f6513a776b57dedb32",
+      "title": "29.空乘、销售、技能五子棋",
+      "pubDate": "2025-10-28T16:00:00.000Z",
+      "duration": 3416,
+      "status": "NORMAL",
+      "payType": "FREE",
+      "permissions": [
+        {
+          "name": "SHARE",
+          "status": "PERMITTED"
+        },
+        {
+          "name": "COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOICE_COMMENT",
+          "status": "DENIED"
+        },
+        {
+          "name": "COMMENT_PAGE",
+          "status": "DENIED"
+        },
+        {
+          "name": "CLAP",
+          "status": "DENIED"
+        },
+        {
+          "name": "PICK",
+          "status": "DENIED"
+        },
+        {
+          "name": "VOTE",
+          "status": "DENIED"
+        },
+        {
+          "name": "AI_SUMMARIZE",
+          "status": "DENIED"
+        }
+      ],
+      "image": {
+        "picUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png",
+        "width": 1440,
+        "height": 1440,
+        "format": "png",
+        "thumbnailUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@thumbnail",
+        "smallPicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@small",
+        "middlePicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@middle",
+        "largePicUrl": "https://image.xyzcdn.net/Fk_fWvwF0GQU9_tvdC_xm9FGUYtH.png@large"
+      },
+      "enclosure": {
+        "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lpWas7ytf9pxkybafXkM5Xs3iNSE.m4a"
+      },
+      "media": {
+        "id": "65bb55f6513a776b57dedb32/lpWas7ytf9pxkybafXkM5Xs3iNSE.m4a",
+        "size": 82636937,
+        "mimeType": "audio/mp4",
+        "source": {
+          "mode": "PUBLIC",
+          "url": "https://media.xyzcdn.net/65bb55f6513a776b57dedb32/lpWas7ytf9pxkybafXkM5Xs3iNSE.m4a"
+        }
+      }
+    }
+  ]
+}

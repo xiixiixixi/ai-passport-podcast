@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#202225">
+  <meta name="color-scheme" content="light dark">
+  <title>随身听 · 播客播放器</title>
+  <script>try{const t=JSON.parse(localStorage.getItem('portable-podcast-theme'));if(['light','dark'].includes(t))document.documentElement.dataset.theme=t;}catch{}</script>
+  <link rel="stylesheet" href="/static/assets/player.css?v=20261005-public">
+  <link rel="stylesheet" href="/static/assets/access.css?v=20261005-public">
+</head>
+<body>
+  <aside class="sidebar" aria-label="播客导航">
+    <a class="brand" href="#library"><span class="brand-mark" aria-hidden="true"><span class="icon icon-headphones"></span></span><span>随身听<small>播客播放器</small></span></a>
+    <nav class="nav" aria-label="页面栏目">
+      <a href="#library" data-view="library" aria-current="page"><span class="icon icon-library" aria-hidden="true"></span>我的节目</a>
+      <a href="#sources" data-view="sources"><span class="icon icon-compass" aria-hidden="true"></span>添加节目</a>
+      <a href="#stats" data-view="stats"><span class="icon icon-clock" aria-hidden="true"></span>收听统计</a>
+      <a href="#devices" data-view="devices"><span class="icon icon-device" aria-hidden="true"></span>我的设备</a>
+    </nav>
+    <p class="sidebar-caption">已订阅节目</p>
+    <div class="sidebar-shows" id="sidebar-shows"></div>
+    <p class="sidebar-note"><strong>网页与设备接着听</strong>收听记录保存在后台，网页和设备共用进度。正在播放时不会被另一端强行切换。</p>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <a class="mobile-brand" href="#library"><span class="brand-mark" aria-hidden="true"><span class="icon icon-headphones"></span></span>随身听</a>
+      <span class="context-label" id="context-label">你的播客收藏</span>
+      <div class="topbar-actions">
+        <label class="theme-picker"><span class="icon icon-theme" aria-hidden="true"></span><select id="theme" aria-label="页面外观"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label>
+        <a class="add-source-button" href="#sources">添加节目</a>
+        <button class="refresh" id="refresh" type="button" aria-label="刷新订阅源"><span class="icon icon-refresh" aria-hidden="true"></span><span>刷新订阅源</span></button>
+      </div>
+    </header>
+    <div class="sync-banner" id="sync-banner" role="status" hidden><span id="sync-message"></span><button class="quiet-button" id="retry-sync" type="button">重新同步</button></div>
+    <div class="migration-banner" id="migration-banner" role="status" hidden><div><strong>这台浏览器还保留着旧收听进度</strong><p id="migration-message"></p></div><div class="migration-actions"><button class="show-play" id="import-legacy">导入旧进度</button><button class="quiet-button" id="dismiss-legacy">暂时隐藏</button></div></div>
+    <section class="library" id="library" aria-labelledby="library-heading">
+      <div class="view-heading"><div><h1 id="library-heading">我的节目</h1><p>挑一档节目，接着你上次听到的地方。</p></div><p class="collection-count" id="collection-count">正在读取节目…</p></div>
+      <div class="sync-banner" id="catalogue-banner" role="status" aria-live="polite" hidden><span id="catalogue-message"></span><a id="catalogue-login" href="/login" hidden>重新登录</a><button class="quiet-button" id="retry-catalogue" type="button" hidden>重新检查</button></div>
+      <section class="recent-section" aria-labelledby="recent-heading">
+        <div class="shelf-header"><h2 id="recent-heading">最近收听</h2><div class="recent-heading-actions"><span class="section-note" id="recent-note">网页与设备共用</span><button class="quiet-button" id="recent-more" hidden>查看更多</button></div></div>
+        <div class="recent-list" id="recent-list" aria-busy="true"><p class="empty">正在读取收听记录…</p></div>
+      </section>
+      <div class="shelf-header"><h2>我的订阅</h2><div class="shelf-controls"><button class="icon-button" id="shelf-back" aria-label="向左浏览节目"><span class="icon icon-left" aria-hidden="true"></span></button><button class="icon-button" id="shelf-forward" aria-label="向右浏览节目"><span class="icon icon-right" aria-hidden="true"></span></button></div></div>
+      <div class="show-list" id="show-list" aria-label="选择要浏览的节目"><span class="skeleton-cover" role="status" aria-label="正在读取节目"></span><span class="skeleton-cover" aria-hidden="true"></span><span class="skeleton-cover" aria-hidden="true"></span></div>
+      <section class="episode-panel" aria-labelledby="show-heading">
+        <div class="episode-header">
+          <div class="selected-cover cover-wrap"><span class="cover-fallback"><span class="icon icon-headphones" aria-hidden="true"></span></span><img id="show-cover" src="/static/assets/icons/headphones.svg" alt="随身听备用图标" onerror="this.style.visibility='hidden'"></div>
+          <div class="show-details"><p class="eyebrow">正在浏览的节目</p><h2 id="show-heading">选择一档节目</h2><p class="show-author" id="show-author">你的播客收藏</p><p class="show-summary" id="show-summary">选择上方的节目开始浏览</p></div>
+          <button class="show-play" id="show-play" disabled><span class="icon icon-play" aria-hidden="true"></span>播放本页第一集</button>
+        </div>
+        <div class="show-listening-summary" id="show-listening-summary" aria-live="polite"></div>
+        <div class="episode-list-heading"><h3>单集</h3><label class="episode-order">排序<select id="episode-order" aria-label="单集排序"><option value="newest">最新在前</option><option value="oldest">最早在前</option></select></label></div>
+        <div class="episode-filters" id="episode-filters" aria-label="按收听状态筛选"><button data-filter="all" aria-pressed="true">全部</button><button data-filter="unplayed" aria-pressed="false">未听过</button><button data-filter="in_progress" aria-pressed="false">听了一部分</button><button data-filter="completed" aria-pressed="false">已听完</button></div>
+        <div class="episode-list" id="episode-list" aria-busy="true"><p class="empty">正在读取单集…</p></div>
+        <div class="pagination"><span id="page-info">每页 10 集</span><div class="page-buttons"><button class="quiet-button" id="previous-page" disabled>上一页</button><button class="quiet-button" id="next-page" disabled>下一页</button></div></div>
+      </section>
+    </section>
+    <section class="source-page" id="sources" aria-labelledby="sources-heading" hidden>
+      <div class="view-heading"><div><h1 id="sources-heading">添加节目</h1><p>贴入一个播客地址，先核对节目，再加入网页与设备的节目库。</p></div><a class="export-link" href="/subscriptions.opml">导出订阅清单</a></div>
+      <form class="source-search-form" id="source-search-form"><label for="source-search">按节目名搜索</label><div class="source-input-row"><input id="source-search" type="search" placeholder="例如：商业就是这样" maxlength="100" required autocomplete="off"><button class="show-play" id="search-source" type="submit">搜索节目</button></div><p class="form-hint">搜索结果来自苹果播客公开目录，是节目名称搜索；不是个性化推荐。也可以直接使用下方的分享链接添加。</p><p id="source-search-feedback" class="source-feedback" role="status"></p></form>
+      <div class="source-search-results" id="source-search-results" hidden></div>
+      <form class="source-form" id="source-form">
+        <label for="source-url">节目地址</label><div class="source-input-row"><input id="source-url" type="text" inputmode="url" maxlength="2048" placeholder="粘贴订阅地址或节目分享链接" required autocomplete="off" spellcheck="false"><button class="show-play" id="preview-source" type="submit">查看节目</button></div>
+        <p class="form-hint">接受 RSS（播客订阅）地址、苹果播客节目链接和小宇宙播客链接。普通网页、单集链接或音频文件不是整档节目的订阅源。</p>
+        <p class="source-feedback" id="source-feedback" role="status" aria-live="polite"></p>
+      </form>
+      <section class="source-manage" id="source-manage">
+        <h2 style="font-size:18px;margin:28px 0 4px">管理已订阅</h2>
+        <p class="form-hint" style="margin:0 0 6px">退订会同时删除这档节目的单集缓存、封面和收听进度；以后可以重新订阅。</p>
+        <p class="form-hint" style="margin:0 0 10px" id="storage-note">正在读取缓存用量…</p>
+        <div id="manage-shows"></div>
+        <div class="cache-panel" id="cache-panel">
+          <h3>缓存管理</h3>
+          <div class="cache-fields">
+            <label for="prefetch-latest">每档自动缓存的集数（最新优先）<select id="prefetch-latest" aria-label="每档自动缓存的集数"><option value="1">最新 1 集</option><option value="3">最新 3 集</option><option value="5">最新 5 集</option><option value="10">最新 10 集</option></select></label>
+            <label for="keep-per-show">清理时每档至少保留<select id="keep-per-show" aria-label="清理时每档保留的集数"><option value="1">1 集</option><option value="3">3 集</option><option value="5">5 集</option><option value="10">10 集</option><option value="30">30 集</option></select></label>
+          </div>
+          <p class="form-hint" id="cleanup-last">正在读取清理记录…</p>
+          <p class="form-hint">新单集到达后，后台按最新顺序自动补缓存；点播未缓存的集会插到最前。清理在每天凌晨 3 点左右执行：正在播放、未听完、排队或准备中、近两周听过的单集不会被删。</p>
+          <div class="cache-actions"><button class="quiet-button" id="run-cleanup" type="button">立即清理</button><button class="quiet-button" id="clear-cache" type="button">清空全部缓存…</button></div>
+          <p class="source-feedback" id="cache-feedback" role="status"></p>
+        </div>
+      </section>
+      <section class="source-preview" id="source-preview" aria-labelledby="source-preview-heading" hidden></section>
+      <div class="source-guide"><h2>怎么找到节目地址？</h2>
+        <article><span class="guide-step">01</span><div><h3>苹果播客</h3><p>进入一档节目的主页，点分享，再复制链接。请复制<strong>节目主页</strong>，不要复制某一集。</p><code>https://podcasts.apple.com/cn/podcast/id1552904790</code><p class="guide-example-note">例如「商业就是这样」的苹果播客主页。<button class="quiet-button use-source-example" data-example-source="https://podcasts.apple.com/cn/podcast/id1552904790">使用这个示例</button></p></div></article>
+        <article><span class="guide-step">02</span><div><h3>小宇宙</h3><p>进入播客主页，点分享，再复制链接。地址里应当有 <code>/podcast/</code>；带 <code>/episode/</code> 的是单集链接。</p><code>https://www.xiaoyuzhoufm.com/podcast/5e4ee557418a84a0466737b7</code><p class="guide-example-note">例如「忽左忽右」的播客主页。<button class="quiet-button use-source-example" data-example-source="https://www.xiaoyuzhoufm.com/podcast/5e4ee557418a84a0466737b7">使用这个示例</button> 使用公开节目内容，付费或登录后才可听的内容可能无法导入。</p></div></article>
+        <article><span class="guide-step">03</span><div><h3>RSS（播客订阅）地址</h3><p>如果节目官网提供“订阅”或“RSS（播客订阅）”，复制它的地址。有的地址以 <code>.xml</code> 结尾，有的没有；它需要是一份播客订阅内容。</p><code>https://feed.xyzfm.space/example.xml</code><p class="guide-example-note">这是格式示例。只有后台成功读到节目和单集后，才会允许确认添加。</p></div></article>
+      </div>
+      <p class="source-boundary">这页用苹果播客公开目录搜索节目，并支持地址导入，没有自动推荐。添加后，新单集会由后台定期更新；播放进度与设备共用。</p>
+    </section>
+    <section class="stats-page" id="stats" aria-labelledby="stats-heading" hidden>
+      <div class="view-heading"><div><h1 id="stats-heading">收听统计</h1><p>网页与设备的实际收听合在一起。暂停、缓冲和拖动进度不会增加听时长。</p></div><button class="quiet-button" id="refresh-stats">更新统计</button></div>
+      <div class="stats-summary" id="stats-summary" aria-busy="true"><p class="empty">正在读取收听统计…</p></div>
+      <section class="stats-section"><div class="shelf-header"><h2>每档节目</h2><span class="section-note">按听时长排列</span></div><div id="show-stats"></div></section>
+      <section class="stats-section"><div class="shelf-header"><h2>最近 7 天</h2><span class="section-note">按北京时间统计</span></div><div class="listening-days" id="listening-days"></div></section>
+      <p class="stats-footnote" id="stats-footnote">“听过”指实际播放过的单集；“听完”指大部分内容已收听并播放到结尾，或手动标记听完。标记不会增加收听时长。导入的历史进度不会补记过去的听时长和播放次数。</p>
+    </section>
+    <section class="devices-page" id="devices" aria-labelledby="devices-heading" hidden>
+      <div class="view-heading"><div><h1 id="devices-heading">我的设备</h1><p>把家里的播客机连接到这份节目库。</p></div><button class="quiet-button" id="refresh-devices">更新设备</button></div>
+      <p class="devices-intro">每台设备配对一次，之后开机自动连接。多台设备与网页共享这户的订阅和收听进度；退出网页登录不影响已经配对的硬件。</p>
+      <div class="pairing-area">
+        <div><h2>连接一台播客机</h2><p class="device-help">硬件与后台需要连到同一个家庭网络。</p><ol><li>在硬件播放页长按确定，选择「连接设置」。首次安装会直接进入设置。</li><li>手机连接屏幕显示的热点和密码，手动打开 <strong>http://192.168.4.1</strong>。</li><li>填入家里的无线网络、这里的后台地址和配对码。连接成功后，硬件会进入节目库。</li></ol></div>
+        <div class="pairing-controls">
+          <label for="device-server-url">后台地址<input id="device-server-url" type="text" readonly aria-describedby="server-url-help"></label>
+          <p class="device-help" id="server-url-help">使用硬件能访问的局域网地址。后台地址变化后，需要重新连接设置。</p>
+          <button class="show-play" id="create-pairing">生成配对码</button>
+          <div class="pair-details" id="pair-details" hidden><span class="eyebrow">这次配对使用</span><output class="pair-code" id="pair-code" aria-label="六位配对码"></output><p id="pair-countdown"></p><div class="pair-actions"><button class="quiet-button" id="copy-pair-code">复制配对码</button><button class="quiet-button" id="copy-server-url">复制后台地址</button></div></div>
+        </div>
+      </div>
+      <div class="shelf-header"><h2>已授权设备</h2><span class="section-note" id="device-count">正在读取…</span></div>
+      <div class="device-list" id="device-list" aria-busy="true"><p class="empty">正在读取设备…</p></div>
+      <p class="device-feedback" id="device-feedback" role="status" aria-live="polite"></p>
+      <div class="device-session-bar"><p class="device-help">移除设备会停止它的后台权限，已有收听记录会保留。以后可以重新配对。</p><button class="quiet-button" id="admin-logout">退出登录</button></div>
+    </section>
+  </main>
+  <aside class="player" id="player" data-state="idle" aria-label="当前收听与播放控制">
+    <button class="track-identity" id="player-detail" aria-label="打开收听选项" aria-controls="player-options"><img class="player-art" id="player-art" onload="this.style.visibility='visible'" src="/static/assets/icons/headphones.svg" alt="随身听备用图标" onerror="this.style.visibility='hidden'"><span class="track-text"><span class="track-title" id="player-title">选择一集开始收听</span><span class="player-show" id="player-show">随身听 · 播客播放器</span><span class="player-status" id="player-status" aria-live="polite">等你按下播放</span></span></button>
+    <div class="player-center">
+      <div class="transport"><button class="transport-button adjacent" id="newer-episode" disabled aria-label="上一集" title="上一集"><span class="icon icon-previous" aria-hidden="true"></span></button><button class="transport-button" id="back-15" disabled aria-label="后退15秒" title="后退15秒"><span class="icon icon-back" aria-hidden="true"></span></button><button class="main-play" id="toggle-play" disabled aria-label="播放"><span class="icon icon-play" aria-hidden="true"></span></button><button class="transport-button" id="forward-15" disabled aria-label="前进15秒" title="前进15秒"><span class="icon icon-forward" aria-hidden="true"></span></button><button class="transport-button adjacent" id="older-episode" disabled aria-label="下一集" title="下一集"><span class="icon icon-next" aria-hidden="true"></span></button></div>
+      <div class="timeline"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="1" step="1" value="0" disabled aria-label="播放进度"><span id="duration">0:00</span></div>
+    </div>
+    <div class="player-end"><button class="options-button" id="options-toggle" aria-label="收听选项" aria-expanded="false" aria-controls="player-options"><span class="icon icon-options" aria-hidden="true"></span><span><strong>收听选项</strong><span id="options-summary">1 倍 · 未定时</span></span></button></div>
+    <section class="options-sheet" id="player-options" aria-labelledby="options-heading" hidden>
+      <div class="options-header"><h2 id="options-heading">收听选项</h2><button class="icon-button" id="options-close" aria-label="关闭收听选项"><span class="icon icon-close" aria-hidden="true"></span></button></div>
+      <p class="options-title" id="options-title">选择一集开始收听</p><p class="player-note" id="player-note">浏览其他节目时，正在收听的这一集会继续播放。</p>
+      <div class="option-fields"><label>播放速度<select id="speed" aria-label="播放速度"><option value="1">1 倍</option><option value="1.25">1.25 倍</option><option value="1.5">1.5 倍</option><option value="2">2 倍</option></select></label><label>睡眠定时<select id="sleep" aria-label="睡眠定时"><option value="0">不定时</option><option value="15">15 分钟</option><option value="30">30 分钟</option><option value="60">60 分钟</option></select></label></div>
+      <label class="volume-row"><span class="icon icon-volume" aria-hidden="true"></span><span>音量</span><input id="volume" type="range" min="0" max="100" step="5" value="70" aria-label="音量"><output id="volume-value" for="volume">70</output></label>
+      <button class="quiet-button restart-button" id="restart" disabled><span class="icon icon-restart" aria-hidden="true"></span>从头播放这一集</button>
+      <label class="autoplay-row"><input id="autoplay" type="checkbox" checked>这一集听完后，按当前顺序继续同一档节目</label>
+      <p class="player-footnote">进度与设备共用。实际播放的时间才计入统计。睡眠定时到点后会暂停，也会停止自动连播。</p>
+    </section>
+  </aside>
+  <audio id="audio" preload="none"></audio>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/static/assets/player-core.js"></script>
+  <script src="/static/assets/player.js?v=20261007-cache"></script>
+  <script src="/static/assets/devices.js"></script>
+</body>
+</html>

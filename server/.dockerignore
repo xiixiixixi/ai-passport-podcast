@@ -1,0 +1,11 @@
+.env
+.env.*
+data/
+media/
+tests/
+__pycache__/
+*.pyc
+*.log
+*.sqlite3*
+podcasts.json
+podcasts.opml

@@ -1,0 +1,22 @@
+# Private local state and generated products
+.env
+.env.*
+!.env.example
+.local/
+02-环境与账号/
+server/data/
+server/media/
+server/.env.pending.*
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig
+firmware/sdkconfig.old
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.venv/
+*.log
+
+.ci-venv/

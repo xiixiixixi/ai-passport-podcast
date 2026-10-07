@@ -1,0 +1,66 @@
+{
+  "observed_on": "2026-10-04",
+  "shows": {
+    "故事FM": 993,
+    "忽左忽右": 645,
+    "不合时宜": 290,
+    "硅谷101": 264,
+    "怡楽播客": 870,
+    "天真不天真": 58,
+    "李诞": 41,
+    "张小珺Jùn｜商业访谈录": 156,
+    "罗永浩的十字路口": 37,
+    "微信公开TALK": 10,
+    "商业就是这样": 364
+  },
+  "total_episodes": 3728,
+  "unique_characters": 2813,
+  "scope": "Names and episode-title prefixes actually displayable: server first160 Unicode characters, firmware UTF-8 boundaries at64/240 bytes. Character union only; no listening history or credentials.",
+  "previous_archive": "eb50bb64ae7a4e2a9d8bf2fa043d55e60289aee453dc62ac293fccfbad88d041",
+  "missing_in_previous_archive": [
+    {
+      "codepoint": "U+2260",
+      "distinct_episode_title_count": 1,
+      "source_has_glyph": true
+    },
+    {
+      "codepoint": "U+26A0",
+      "distinct_episode_title_count": 1,
+      "source_has_glyph": true
+    },
+    {
+      "codepoint": "U+FF5E",
+      "distinct_episode_title_count": 2,
+      "source_has_glyph": true
+    }
+  ],
+  "source_backed_additions": [
+    "U+01CE",
+    "U+03B9",
+    "U+3007",
+    "U+306E",
+    "U+3093",
+    "U+FE31",
+    "U+FF5C",
+    "U+2260",
+    "U+26A0",
+    "U+FF5E"
+  ],
+  "normalization": {
+    "U+2716": "U+00D7",
+    "U+FE0F": "non-spacing presentation selector omitted in plain text",
+    "U+FFFC": "visible [图] marker; original metadata and bookmarks preserved"
+  },
+  "symbol_distinct_episode_title_counts": {
+    "U+01CE": 1,
+    "U+03B9": 1,
+    "U+3007": 1,
+    "U+306E": 3,
+    "U+3093": 1,
+    "U+FE31": 1,
+    "U+FF5C": 422,
+    "U+2260": 1,
+    "U+26A0": 1,
+    "U+FF5E": 2
+  }
+}

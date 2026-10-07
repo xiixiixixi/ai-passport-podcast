@@ -1,0 +1,40 @@
+name: ${PODCAST_PROJECT_NAME:-passport-podcast}
+services:
+  podcast:
+    build:
+      context: .
+      network: ${PODCAST_BUILD_NETWORK:-default}
+      args:
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+        DEBIAN_MIRROR: ${DEBIAN_MIRROR:-https://deb.debian.org/debian}
+    image: ${PODCAST_IMAGE:-passport-podcast:local}
+    restart: unless-stopped
+    user: "${PODCAST_UID:-1000}:${PODCAST_GID:-1000}"
+    ports:
+      - "${PODCAST_PORT:-8899}:8899"
+    environment:
+      PODCAST_SETUP_KEY: ${PODCAST_SETUP_KEY:?请先运行项目安装脚本生成安装码}
+      PODCAST_PUBLIC_URL: ${PODCAST_PUBLIC_URL:-}
+      # A host loopback proxy injected by Docker points at the container itself.
+      # Runtime proxies are an explicit deployment choice, independent of builds.
+      HTTP_PROXY: ${PODCAST_HTTP_PROXY:-}
+      http_proxy: ${PODCAST_HTTP_PROXY:-}
+      HTTPS_PROXY: ${PODCAST_HTTPS_PROXY:-}
+      https_proxy: ${PODCAST_HTTPS_PROXY:-}
+      ALL_PROXY: ${PODCAST_ALL_PROXY:-}
+      all_proxy: ${PODCAST_ALL_PROXY:-}
+      NO_PROXY: ${PODCAST_NO_PROXY:-localhost,127.0.0.1}
+      no_proxy: ${PODCAST_NO_PROXY:-localhost,127.0.0.1}
+      TZ: Asia/Shanghai
+    volumes:
+      - ./data:/app/data
+      - ./media:/app/media
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

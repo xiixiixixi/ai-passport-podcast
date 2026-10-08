@@ -23,7 +23,7 @@ ROOT_TREES = {"firmware", "server", "scripts", "tests", "docs", "assets", ".gith
 ROOT_FILES = {"README.md", "README.zh_CN.md", "LICENSE", ".gitignore", "install.command", "install.ps1"}
 EXCLUDED_DIRS = {".git", "build", "managed_components", ".env", ".local", "data", "media", "__pycache__", "node_modules", ".venv", "venv", ".pytest_cache", "dist", "logs", "private", "backups", "backup", "cache", ".cache", ".idea", ".vscode", ".agents", ".codex", "__macosx"}
 EXCLUDED_FILES = {".DS_Store", "sdkconfig", "sdkconfig.old", "compile_commands.json", "CMakeCache.txt", "flash_args"}
-EXCLUDED_SUFFIXES = {".pyc", ".pyo", ".elf", ".map", ".bin", ".db", ".sqlite", ".sqlite3", ".log", ".pid", ".dump", ".zip", ".tar", ".gz"}
+EXCLUDED_SUFFIXES = {".pyc", ".pyo", ".elf", ".map", ".bin", ".db", ".sqlite", ".sqlite3", ".sqlite-wal", ".sqlite-shm", ".log", ".pid", ".dump", ".zip", ".tar", ".gz"}
 # This is a checked-in interface stub needed by the clean source host tests,
 # not runtime cache data. Do not exempt any other cache directory or file.
 PUBLIC_SOURCE_EXCEPTIONS = {
@@ -88,6 +88,7 @@ RELEASE_FILES = {
     "partition_table": ("partition_table/partition-table.bin", "partition-table.bin", 0x8000),
 }
 REQUIRED_SOURCE = {
+    ".github/public-files.json", "scripts/check-public-commit.py", "scripts/install-git-hooks.py",
     "README.md", "README.zh_CN.md", "LICENSE", "install.command",
     "docs/install.md", "docs/install.zh_CN.md", "docs/use.md", "docs/use.zh_CN.md",
     "docs/publish.md", "docs/publish.zh_CN.md", "docs/third-party.md", "docs/third-party.zh_CN.md",

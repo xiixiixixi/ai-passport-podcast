@@ -20,3 +20,47 @@ __pycache__/
 *.log
 
 .ci-venv/
+# Local operating-system metadata, build outputs and private backups
+._*
+**/node_modules/
+**/.venv/
+**/.pytest_cache/
+**/__pycache__/
+**/managed_components/
+**/build/
+*.pyc
+*.pyo
+*.elf
+*.map
+*.bin
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.pid
+*.dump
+*.zip
+*.tar
+*.gz
+/private/
+/backups/
+/backup/
+/logs/
+
+# Internal repair history and artwork not distributed with public source
+/docs/claude-fix-report.md
+/server/static/assets/station-art-20261004.jpg
+/firmware/assets/images/*
+!/firmware/assets/images/podcast-covers/
+/firmware/assets/images/podcast-covers/*
+!/firmware/assets/images/podcast-covers/README.md
+!/firmware/assets/images/podcast-covers/README.zh_CN.md
+!/firmware/assets/images/podcast-covers/manifest.json
+/firmware/docs/brand/ai-passport-*
+
+# Raw reference catalogues stay local; tracked public variants remain maintained
+/firmware/assets/README.md
+/firmware/assets/README.zh_CN.md
+/firmware/docs/brand/README.md
+/firmware/docs/brand/README.zh_CN.md

@@ -1,58 +1,63 @@
-[简体中文](README.zh_CN.md) · **English**
+**简体中文** · [English（英文）](README.en.md)
 
-# Pocket Podcast · 随身听
+# 随身听
 
-Turn AI Passport into a three-button podcast player. Choose a show, listen to an episode, and resume where you paused. Manage subscriptions, audio caches and listening progress on your own household server.
+给 AI Passport（人工智能护照）做的一套播客玩法。把节目管理留在网页，把收听交给这张小卡片上的三个按键。
 
-![Pocket Podcast player and features](assets/publication/github-showcase.png)
+在网页里准备好节目，拿起护照，选一集，按播放。听到一半停了，下次还能接着听。
 
-[Download the installation package](https://github.com/xiixiixixi/ai-passport-podcast/releases) · [Install and pair](docs/install.md) · [User guide](docs/use.md)
+[下载安装包](https://github.com/xiixiixixi/ai-passport-podcast/releases) · [安装与配对](docs/install.zh_CN.md) · [使用说明](docs/use.zh_CN.md) · [官方玩法页](https://ai-passport.folotoy.cn/plays/1024/)
 
-## A player you can read at a glance
+<p align="center">
+  <img src="docs/images/podcast-device.png" alt="AI Passport 人工智能护照上的随身听播放界面预览" width="300">
+</p>
 
-A white-and-blue time ruler, large elapsed clock and volume segments make playback progress clear. Browse shows by their latest update, open their episode lists, or continue a recent listen.
+<p align="center"><sub>外观与界面预览，图中播放数值用于展示。</sub></p>
 
-| Player | Library |
-| --- | --- |
-| ![Player](assets/publication/player-native.png) | ![Library](assets/publication/library-native.png) |
+## 先在网页里把节目准备好
 
-These images are exported on a computer by the actual UI implementation with fictional sample programmes and original artwork. They show the layout; they are not device photographs or personal listening records.
+知道节目名字，就搜节目；有 RSS（节目订阅源）、苹果播客节目链接或小宇宙公开免费节目链接，也可以直接粘贴添加。
 
-## Everyday listening
+![在后台按节目名搜索或粘贴链接添加节目](docs/images/backend-add.jpg)
 
-- Pause and resume, change volume, and seek in 15- or 60-second steps.
-- Continue to the next episode in the selected direction; set a 15-, 30- or 60-minute sleep timer.
-- Save recent positions and share progress between the web player and paired devices.
-- Search or paste a link to add shows, and manage household subscriptions and devices.
-- Pre-cache the latest three episodes per show by default. View disk use and adjust prefetch and cleanup retention.
-- Let the screen turn off while audio continues; the first key gesture wakes it.
+后台默认提前准备每档节目的最新三集。哪些单集已经就绪、用了多少空间，都能在网页里看；自动缓存几集、旧内容保留多少，也可以自己调整。第一次听还没缓存的单集，需要等整集准备完成。
 
-## Start with your own server
+小宇宙公开页面能取得的历史单集可能不完整，有官方订阅源时优先使用它。
 
-The product includes device firmware and a self-hosted backend. One household server can authorize several players sharing that household's shows and progress. The server must stay on while listening.
+## 到了护照上，就用三个按键
 
-1. Install and start Docker on a computer or household server.
-2. Download and unpack the installation package. On macOS, open `install.command`; use the matching script on other systems as described in the [installation guide](docs/install.md).
-3. Open the first-setup page, set an administrator password, and generate a six-digit pairing code in My Devices.
-4. After installing compatible firmware, connect your phone to the device's setup hotspot and enter your Wi-Fi network, backend address and pairing code.
-5. Successful network verification and pairing open the library. Subsequent startups go directly to listening.
+列表里，上下选节目或单集，按确定进入。播放时，确定键暂停或继续，上下键调音量。想倒回刚才那句话，长按方向键进入进度调整，短按移动十五秒，长按移动一分钟，再按确定。
 
-Use a backend LAN address reachable from the device's 2.4 GHz Wi-Fi network. Public source requires web sign-in and device pairing; it excludes the author's private passwordless patch.
+<table>
+  <tr>
+    <th>节目库</th>
+    <th>播放页</th>
+  </tr>
+  <tr>
+    <td><img src="docs/images/podcast-library.png" alt="随身听节目库，可以选择硅谷101、忽左忽右和不合时宜" width="240"></td>
+    <td><img src="docs/images/podcast-player.png" alt="随身听播放页，显示节目标题、已播时间、蓝色进度刻度和音量" width="240"></td>
+  </tr>
+</table>
 
-## Check compatibility before installation
+屏幕上留了封面、标题、大号已播时间、刻度尺和音量。默认十五秒无操作息屏，声音继续；第一次按键先唤醒，再按才操作。睡眠定时可以选十五、三十或六十分钟，到点暂停并停止接播。
 
-This public preview targets ESP32-C3 devices with 8 MB flash and an initialized modern permanent-Recovery system. For older or unknown layouts, first read the [installation guide](docs/install.md) and [recovery compatibility](firmware/docs/podcast-recovery.md). Do not write a complete image blindly.
+## 暂停之后，还能接着听
 
-Release assets include a complete image and an application upgrade image. The complete image is intended for offset zero; the app-only image must use the upgrade tool's configured offset. The package contains no permanent-Recovery binary and provides no old-device identity migration. First installation and the new pairing flow still require further on-device acceptance. See the [validation record](docs/validation.md).
+比如在网页上听了一半，暂停后换到已配对的护照，就能从最近收听里继续那一集。网页和设备共用自家后台里的收听进度，每户也可以配对多台护照。
 
-## For developers
+**这是设备程序与自家后台一起工作的玩法。缓存保存在后台电脑或家庭服务器上，收听时后台必须保持运行，护照也要能通过无线网络访问到它。设备目前没有离线音频缓存。**
 
-| Directory | Contents |
-| --- | --- |
-| `firmware/` | Player, board support, fonts and tests |
-| `server/` | Web interface, feeds, cache management and device access |
-| `scripts/` | Backend installation, protected upgrades and public export |
-| `assets/publication/` | Original artwork, actual UI exports and reproducible tools |
-| `docs/` | Installation, usage, validation and licensing boundaries |
+## 想试的话，从这里开始
 
-Application code uses MIT, retaining the original board-support license and the font and icon notices. See [third-party materials](docs/third-party.md). Public packages exclude household configuration, credentials, QR secrets, listening records, audio caches, internal repair logs and programme artwork without confirmed redistribution permission.
+1. **先核对设备。**公开预览版面向 ESP32-C3（设备芯片）、八兆字节存储、已初始化兼容永久恢复系统的设备。旧布局或恢复功能不明的设备，先看[安装与兼容说明](docs/install.zh_CN.md)。
+2. **启动后台。**在电脑或家庭服务器上安装并启动 Docker（后台运行工具）。从发布页下载 `installation.zip`（完整安装包）并解压；苹果电脑双击 `install.command`（安装入口），其他系统按安装说明运行对应脚本，再设置管理口令。
+3. **安装设备程序。**按安装说明选择适合自己设备的方法，安装后会替换当前玩法。首次安装和保留资料的升级分别操作；安装包不包含永久恢复程序，也不提供旧设备身份迁移。
+4. **配对。**登录后台，在「我的设备」生成六位配对码。手机连接护照显示的设置热点，按屏幕提示打开设置页，填写家里的 2.4 吉赫兹无线网络、后台局域网地址和配对码。连接及配对成功后进入节目库。
+
+当前仍是公开预览版，首次安装、手机设置、配对、恢复和实际收听还需要进一步实机验收，续航没有实测数字。图中画面用于展示界面，具体进展见[检查记录](docs/validation.zh_CN.md)和[恢复兼容说明](firmware/docs/podcast-recovery.zh_CN.md)。
+
+## 代码和说明
+
+仓库同时包含 `firmware/`（设备程序）与 `server/`（网页和后台程序）；安装、升级和公开包工具放在 `scripts/`（工具目录）。
+
+应用代码采用 MIT（宽松开源许可），依赖许可和图片来源见[第三方说明](docs/third-party.zh_CN.md)。公开文件清单和提交检查会排除私人配置、设备凭据、收听记录、音频缓存及内部材料，详见[公开提交说明](docs/publish.zh_CN.md)。
